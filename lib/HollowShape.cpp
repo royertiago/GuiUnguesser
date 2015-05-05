@@ -1,5 +1,5 @@
 #include "HollowShape.h"
-#include <ProjGaia/tools/Angle.h>
+#include <ProjGaia/Tools/Angle.h>
 
 #include <SFML/Graphics/RenderTarget.hpp>
 using namespace sf;

@@ -9,7 +9,7 @@
 #include <ProjGaia/Tools/Coord.h>
 
 #include <SFML/Window/Mouse.hpp>
-#include <SFML/Window/KeyBoard.hpp>
+#include <SFML/Window/Keyboard.hpp>
 #include <ProjGaia/Tools/KeyBoardEvent.h>
 #include <ProjGaia/Tools/NeedsUpdate.h>
 
