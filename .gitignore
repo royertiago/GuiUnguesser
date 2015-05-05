@@ -52,3 +52,9 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Vim temporaries
+.*.swp
+
+# Makefile dependency management
+*.dep.mk
