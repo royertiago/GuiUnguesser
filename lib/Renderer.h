@@ -15,7 +15,7 @@
 
 #include <ProjGaia/Tools/Observer.h>
 #include <ProjGaia/Tools/MouseEvent.h>
-#include <ProjGaia/SFML/DrawableSprite.h>
+#include "DrawableSprite.h"
 #include <ProjGaia/Graphics/Camera.h>
 #include <ProjGaia/Graphics/DrawableType.h>
 #include <ProjGaia/Graphics/PainterType.h>

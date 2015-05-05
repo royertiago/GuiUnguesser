@@ -13,6 +13,10 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+#codeblocks
+*.cbp
+*.layout
+*.depend
 
 
 # Windows shortcuts
@@ -32,6 +36,7 @@ $RECYCLE.BIN/
 *.o
 *.exe
 *.rar
+*.ttf
 
 
 # Thumbnails

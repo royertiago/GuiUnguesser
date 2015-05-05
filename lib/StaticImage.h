@@ -1,7 +1,7 @@
 #ifndef STATICIMAGE_H
 #define STATICIMAGE_H
 #include <ProjGaia/Graphics/DrawableType.h>
-#include <ProjGaia/SFML/DrawableSprite.h>
+#include "DrawableSprite.h"
 
 namespace pg{
 class StaticImage: public DrawableType
