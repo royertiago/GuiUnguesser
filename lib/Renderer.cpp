@@ -4,7 +4,8 @@
 #include <ctime>
 #include <cstdlib>
 //#include <iostream>
-#include <windows.h>
+#include <thread>
+#include <chrono>
 
 #include <ProjGaia/Tools/Coord.h>
 
@@ -192,7 +193,7 @@ namespace pg
 				if ( event.type == Event::Resized ) {
 				}
 			}
-			Sleep ( 16 );
+			std::this_thread::sleep_for( std::chrono::milliseconds(16) );
 
 			window->clear ( Color ( 0x00, 0x00, 0x00, 0x00 ) );
 
