@@ -21,10 +21,8 @@ mutex a;
 
 
  Gui gui=Gui();
-cout<< gui.ask("Hello world")<<endl;
-cout<< gui.ask("Hello world2")<<endl;
-cout<< gui.ask("Hello world3")<<endl;
-cout<< gui.ask("Hello world4")<<endl;
+while(true)cout<< gui.ask("Hello world")<<endl;
+
 
 
 

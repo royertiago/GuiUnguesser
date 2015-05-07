@@ -4,14 +4,15 @@
 #include <ctime>
 #include <cstdlib>
 //#include <iostream>
-#include <windows.h>
 
 #include <ProjGaia/Tools/Coord.h>
 
 #include <SFML/Window/Mouse.hpp>
-#include <SFML/Window/KeyBoard.hpp>
+#include <SFML/Window/Keyboard.hpp>
 #include <ProjGaia/Tools/KeyBoardEvent.h>
 #include <ProjGaia/Tools/NeedsUpdate.h>
+#include <thread>
+#include <chrono>
 
 
 using namespace sf;
@@ -192,7 +193,7 @@ namespace pg
 				if ( event.type == Event::Resized ) {
 				}
 			}
-			Sleep ( 16 );
+			std::this_thread::sleep_for(std::chrono::milliseconds(16));
 
 			window->clear ( Color ( 0x00, 0x00, 0x00, 0x00 ) );
 
