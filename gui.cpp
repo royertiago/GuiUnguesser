@@ -207,8 +207,8 @@ int main ( int argc, char ** argv )
 				break;
 			case UnguesserMove::ASK_NEW_QUESTION: {
 					///  std::cout << "Consider these in my database:\n";
-					std::string alceText = "Consider these in my database:\n"
-					                       auto best = unguesser.best_guesses();
+					std::string alceText = "Consider these in my database:\n";
+					auto best = unguesser.best_guesses();
 					for ( auto ptr : best ) {
 						alceText += ptr->name;
 						alceText += "\n";
