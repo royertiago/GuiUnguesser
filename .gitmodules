@@ -1,3 +1,9 @@
 [submodule "ProjGaia"]
 	path = ProjGaia
 	url = https://github.com/ebonywolf/ProjGaia
+[submodule "Catch"]
+	path = Catch
+	url = https://github.com/philsquared/Catch/
+[submodule "cmdline"]
+	path = cmdline
+	url = https://github.com/royertiago/cmdline

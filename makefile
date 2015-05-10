@@ -18,7 +18,8 @@ endef
 # This makefile handles multiple programs in the same directory
 # that include several files.
 CXXFLAGS ?= -g
-ALL_CXXFLAGS := $(CXXFLAGS) -std=c++1y -iquote ./ -iquote ./lib/
+ALL_CXXFLAGS := $(CXXFLAGS) -std=c++1y -iquote ./ -iquote ./lib/ \
+	-isystem Catch/single_include
 LDFLAGS += -lsfml-graphics -lsfml-window -lsfml-system -lGL -pthread
 
 # Directories whose makefiles need to be included

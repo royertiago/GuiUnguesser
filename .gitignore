@@ -42,6 +42,7 @@ $RECYCLE.BIN/
 *.rar
 *.ttf
 main
+test/test
 
 # Thumbnails
 ._*
@@ -62,3 +63,10 @@ Temporary Items
 
 # Makefile dependency management
 *.dep.mk
+
+# Latex files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.pdf
