@@ -24,7 +24,7 @@
 class NeedsUpdate;
 
 namespace pg{
-class Renderer : public WindowType,public PainterType, public MouseReader,public KeyBoardReader
+class Renderer : public WindowType,public PainterType, public MouseReader,public KeyBoardReader, public Observer<char>
 {
 	public:
 		int dimX;
@@ -47,6 +47,7 @@ class Renderer : public WindowType,public PainterType, public MouseReader,public
 	protected:
 		void createMouseEvent ( sf::Event );
 		void createKeyBoardEvent ( sf::Event );
+        void createCharEvents(sf::Event);
 
 
 		sf::RenderWindow* window;
@@ -54,8 +55,7 @@ class Renderer : public WindowType,public PainterType, public MouseReader,public
 		std::list<NeedsUpdate*> syncList=std::list<NeedsUpdate*>();
 
 		void drawSprites();
-		void mouseEvents ( sf::Event );
-		void keyboardEvents ( sf::Event );
+
 
 		Camera* camera;
 	private:

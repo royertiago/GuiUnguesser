@@ -17,7 +17,11 @@ $RECYCLE.BIN/
 *.cbp
 *.layout
 *.depend
-
+#Binary files
+*.o
+*.exe
+*.rar
+*.ttf
 
 # Windows shortcuts
 *.lnk
@@ -32,11 +36,7 @@ $RECYCLE.BIN/
 .DS_Store
 .AppleDouble
 .LSOverride
-#Binary files
-*.o
-*.exe
-*.rar
-*.ttf
+
 
 
 # Thumbnails

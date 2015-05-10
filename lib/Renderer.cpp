@@ -20,7 +20,7 @@ using namespace pg;
 namespace pg
 {
 	Renderer::Renderer ( std::string name , Camera* camera, pg::Coord tam , pg::Coord dim ) :
-		camera ( camera ), dimX ( dim.x ), dimY ( dim.y ),tam(tam),name(name)
+		camera ( camera ), dimX ( dim.x ), dimY ( dim.y ), tam ( tam ), name ( name )
 
 	{
 
@@ -29,7 +29,7 @@ namespace pg
 	Renderer::~Renderer()
 	{
 		delete ( window );
-		delete(assync);
+		delete ( assync );
 	}
 	pg::Coord Renderer::getMouseCoord()
 	{
@@ -50,9 +50,18 @@ namespace pg
 		return x;
 
 	}
+	void Renderer::createCharEvents (Event event )
+	{
+		if ( event.type == sf::Event::TextEntered ) {
+			if ( event.text.unicode < 128 ) {
+				char a = static_cast<char> ( event.text.unicode ) ;
+				pg::Observer<char>::notifyListeners ( a );
+			}
+		}
+	}
+
 	void Renderer::createMouseEvent ( sf::Event e )
 	{
-
 		switch ( e.type ) {
 			case Event::MouseButtonPressed: {
 					pg::Coord coord = getMouseCoord();
@@ -165,7 +174,7 @@ namespace pg
 	}
 	void Renderer::begin()
 	{
-        ContextSettings contextSettings;
+		ContextSettings contextSettings;
 		contextSettings.depthBits = 32;
 		window = new RenderWindow ( VideoMode ( tam.x, tam.y ), name, Style::Default, contextSettings );
 
@@ -190,10 +199,11 @@ namespace pg
 				}
 				createMouseEvent ( event );
 				createKeyBoardEvent ( event );
+				createCharEvents ( event );
 				if ( event.type == Event::Resized ) {
 				}
 			}
-			std::this_thread::sleep_for(std::chrono::milliseconds(16));
+			std::this_thread::sleep_for ( std::chrono::milliseconds ( 16 ) );
 
 			window->clear ( Color ( 0x00, 0x00, 0x00, 0x00 ) );
 

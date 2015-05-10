@@ -26,9 +26,12 @@ class Constants
         static const int BUTTON_HEIGHT=300;
         static sf::Text* createQuestionText();
         static std::list<Button*> createButtons();
+        static Button* createOkButton();
+
+
+        static sf::Font* arial;
 
     protected:
-        static sf::Font* arial;
          static bool loaded;
 
     private:
