@@ -63,15 +63,19 @@ static Button* createButton ( Coord pos, Coord dim, sf::Color cor, string text, 
 
 	return new Button ( hb, sprite, answer );
 }
-
+Button* Constants::createOkButton(){
+    if ( !loaded ) {
+		arial = loadFont ( FONT_FILE );
+		loaded = true;
+	}
+    return createButton(Coord(300,200),Coord(TAM_X,TAM_Y), sf::Color(155,155,155),"OK",arial,0,sf::Color::White);
+}
 std::list<Button*> Constants::createButtons()
 {
 	if ( !loaded ) {
 		arial = loadFont ( FONT_FILE );
 		loaded = true;
 	}
-
-
 
 	Button* yes = createButton   ( Coord ( POS_X, POS_Y ), Coord ( TAM_X, TAM_Y ), sf::Color::Green, TEXT_YES, arial, 1 );
 
@@ -84,8 +88,6 @@ std::list<Button*> Constants::createButtons()
 	Button* idk = createButton ( Coord ( POS_X + 2 * VAR_X, POS_Y+VAR_Y ), Coord ( TAM_X+70, TAM_Y ), sf::Color(155,155,155), TEXT_IDK, arial, 0 );
 
 	std::list<Button*> lista={yes,no,maybe,unlikely,idk};
-
-
 
 	return lista;
 }

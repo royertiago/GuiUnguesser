@@ -3,6 +3,7 @@
 #include "DrawableSprite.h"
 #include "ColoredShape.h"
 
+#include <ProjGaia/Graphics/DrawableType.h>
 #include <ProjGaia/Tools/Coord.h>
 #include <SFML/Graphics/Font.hpp>
 #include <SFML/Graphics/Text.hpp>
@@ -18,6 +19,7 @@ class TextBox:public pg::DrawableSprite
         virtual ~TextBox();
         void update(void*);
         void draw ( sf::RenderTarget&, sf::RenderStates )const ;
+
 
     protected:
         pg::ColoredShape* box;

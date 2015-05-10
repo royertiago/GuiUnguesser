@@ -17,7 +17,11 @@ $RECYCLE.BIN/
 *.cbp
 *.layout
 *.depend
-
+#Binary files
+*.o
+*.exe
+*.rar
+*.ttf
 
 # Windows shortcuts
 *.lnk
