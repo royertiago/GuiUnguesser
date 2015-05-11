@@ -27,3 +27,11 @@ Then, simply type
     make
 
 The makefile will do the rest for you.
+
+Font License
+============
+
+The repository includes the font `Lato-Regular.ttf`,
+downloaded from [here](http://www.latofonts.com/)
+and distributed under the
+[OFL](http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web).
