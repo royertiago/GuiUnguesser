@@ -28,6 +28,33 @@ Then, simply type
 
 The makefile will do the rest for you.
 
+Running the program
+===================
+
+There are two programs: `main` and `gui`.
+Both versions accepts multiple databases as input,
+so you must specify which database are you using.
+Both programs accept other command-line arguments as input;
+you can discover which using the option `--help`.
+
+`main` is not-so-user-friendly command-line version of the program.
+To run it with the acompanying database, `ine.db`,
+navigate to the repository's root directory and type
+
+    ./main ine.db
+
+`gui` is an incomplete graphical user interface.
+Altough is more user-friendly, it has no options for
+adding new entities to the database nor for adding new questions.
+You can run it via
+
+    ./gui ine.db
+
+The default database for the GUI is `ine.db`, which refers to
+the disciplines of the Computer Science course at UFSC,
+so, altough the prompt are in english,
+the questions are in portuguese...
+
 Font License
 ============
 
