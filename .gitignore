@@ -41,6 +41,7 @@ $RECYCLE.BIN/
 *.exe
 *.rar
 *.ttf
+gui
 main
 test/test
 
