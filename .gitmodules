@@ -1,6 +1,6 @@
 [submodule "ProjGaia"]
 	path = ProjGaia
-	url = https://github.com/ebonywolf/ProjGaia
+	url = https://github.com/royertiago/ProjGaia
 [submodule "Catch"]
 	path = Catch
 	url = https://github.com/philsquared/Catch/
