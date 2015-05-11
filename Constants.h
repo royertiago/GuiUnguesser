@@ -9,7 +9,7 @@
 #define TEXT_MAYBE "Maybe"
 #define TEXT_UNLIKELY "Unlikely"
 #define TEXT_IDK "I don't know"
-#define FONT_FILE "Font/arial.ttf"
+#define FONT_FILE "Lato-Regular.ttf"
 
 #define POS_X 200
 #define VAR_X 150

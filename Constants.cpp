@@ -31,7 +31,7 @@ sf::Text* Constants::createQuestionText()
 	sf::Text* novo = new sf::Text();
 	novo->setFont ( *arial );
 	novo->setString ( "Frase default" );
-	novo->setCharacterSize ( 24 );
+	novo->setCharacterSize ( 12 );
 	novo->setColor ( sf::Color::White );
 	novo->setPosition(300,50);
 
